@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="white" type="color">#ffffff</item>
+    <item name="black" type="color">#000000</item>
+    <item name="transparent" type="color">#00000000</item>
+
+
+    <item name="app_main_color" type="color">#33B5E5</item>
+    <item name="activity_bg_color_a" type="color">#eeeeee</item>
+    <item name="activity_bg_color_b" type="color">#f3f3f3</item>
+    <item name="circle_chart_bg" type="color">#4433B5E5</item>
+    <item name="text_color_a" type="color">#333333</item>
+    <item name="text_color_b" type="color">#999999</item>
+    <item name="text_color_c" type="color">#666666</item>
+
+
+    <item name="swipe_refresh_layout_a" type="color">#99CC00</item>
+    <item name="swipe_refresh_layout_b" type="color">#FFBB33</item>
+    <item name="swipe_refresh_layout_c" type="color">#AA66CC</item>
+    <item name="swipe_refresh_layout_d" type="color">#FF4444</item>
+
+    <item name="action_radio_check" type="color">#22000000</item>
+    <item name="action_radio_press" type="color">#0f000000</item>
+
+    <item name="action_bar_pop_bg" type="color">#ADADAD</item>
+
+</resources>

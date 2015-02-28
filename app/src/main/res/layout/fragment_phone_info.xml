@@ -1,0 +1,160 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/net.onefree.aiphone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/activity_bg_color_a">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <FrameLayout
+            android:id="@+id/gpu_layout"
+            android:layout_width="1px"
+            android:layout_height="1px" />
+
+        <RelativeLayout
+            android:id="@+id/temp_chart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp">
+
+            <net.onefree.aiphone.view.CircleChart
+                android:id="@+id/storage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="40dp"
+                android:layout_toLeftOf="@+id/temp_splite"
+                app:name="存储"
+                app:rateSelectBg="#99CC00" />
+
+            <View
+                android:id="@+id/temp_splite"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="可用/总共"
+                android:textColor="@color/text_color_c"
+                android:textSize="10sp" />
+
+            <net.onefree.aiphone.view.CircleChart
+                android:id="@+id/ram"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="40dp"
+                android:layout_toRightOf="@+id/temp_splite"
+                app:name="RAM"
+                app:rateSelectBg="#FFBB33" />
+
+            <net.onefree.aiphone.view.CircleChart
+                android:id="@+id/cpu"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                app:name="CPU"
+                app:rateSelectBg="#FFBB33" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/temp_chart"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <net.onefree.aiphone.view.ExpandPanelView
+                android:id="@+id/base_phone_info"
+                style="@style/phone_info_expand_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:content_layout="@layout/phone_base_info"
+                app:showContent="true"
+                app:title="基本信息" />
+
+            <net.onefree.aiphone.view.ExpandPanelView
+                android:id="@+id/display"
+                style="@style/phone_info_expand_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view1"
+                android:layout_marginTop="8dp"
+                app:content_layout="@layout/phone_base_info"
+                app:title="显示" />
+
+            <net.onefree.aiphone.view.ExpandPanelView
+                android:id="@+id/camera"
+                style="@style/phone_info_expand_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view1"
+                android:layout_marginTop="8dp"
+                android:visibility="gone"
+                app:content_layout="@layout/phone_base_info"
+                app:title="相机" />
+
+            <net.onefree.aiphone.view.ExpandPanelView
+                android:id="@+id/cpu_expand_view"
+                style="@style/phone_info_expand_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view1"
+                android:layout_marginTop="8dp"
+                app:content_layout="@layout/phone_base_info"
+                app:title="CPU" />
+
+            <net.onefree.aiphone.view.ExpandPanelView
+                android:id="@+id/battery"
+                style="@style/phone_info_expand_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view1"
+                android:layout_marginTop="8dp"
+                app:content_layout="@layout/phone_base_info"
+                app:title="电池" />
+
+            <net.onefree.aiphone.view.ExpandPanelView
+                android:id="@+id/os"
+                style="@style/phone_info_expand_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view1"
+                android:layout_marginTop="8dp"
+                android:visibility="gone"
+                app:content_layout="@layout/phone_base_info"
+                app:title="系统" />
+
+            <net.onefree.aiphone.view.ExpandPanelView
+                android:id="@+id/send"
+                style="@style/phone_info_expand_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view1"
+                android:layout_marginTop="8dp"
+                app:content_layout="@layout/phone_base_info"
+                app:title="传输" />
+
+            <net.onefree.aiphone.view.ExpandPanelView
+                android:id="@+id/other"
+                style="@style/phone_info_expand_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view1"
+                android:layout_marginTop="8dp"
+                app:content_layout="@layout/phone_base_info"
+                app:title="支持的传感器" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

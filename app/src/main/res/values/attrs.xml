@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CircleChart">
+        <attr name="name" format="string|reference" />
+        <attr name="usedRate" format="integer|reference" />
+        <attr name="usedTotal" format="string|reference" />
+        <attr name="rateNormalBg" format="color|reference" />
+        <attr name="rateSelectBg" format="color|reference" />
+    </declare-styleable>
+    <declare-styleable name="ExpandPanelView">
+        <attr name="content_layout" format="reference" />
+        <attr name="title" format="string|reference" />
+        <attr name="showContent" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+</resources>

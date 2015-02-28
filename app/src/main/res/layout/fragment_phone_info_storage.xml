@@ -1,0 +1,220 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/net.onefree.aiphone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <LinearLayout
+        android:id="@+id/circle_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/split_view"
+        android:gravity="center">
+
+        <net.onefree.aiphone.view.CircleChart
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:name="内存"
+            app:usedRate="@string/circle_chart_default_used_rate"
+            app:usedTotal="11.2G/34.2G"
+            app:rateSelectBg="#AA66CC" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/split_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/split_view"
+        android:gravity="center">
+        android:layout_height="wrap_content">
+
+        <net.onefree.aiphone.view.CircleChart
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:usedRate="60"
+            app:usedTotal="9.2G/34.2G"
+            app:name="CPU"
+            app:rateSelectBg="#FFBB33" />
+    </LinearLayout>
+
+    <net.onefree.aiphone.view.RateProgressView
+        android:id="@+id/rate"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/circle_1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rate"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:id="@+id/linearLayout">
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@android:color/holo_blue_light" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="图片"
+            android:layout_marginLeft="8dp" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@android:color/holo_red_light"
+            android:layout_marginLeft="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="音乐"
+            android:layout_marginLeft="8dp" />
+
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@android:color/holo_green_light"
+            android:layout_marginLeft="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="软件"
+            android:layout_marginLeft="8dp" />
+
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginLeft="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="其它"
+            android:layout_marginLeft="8dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="23G/50G"
+            android:layout_gravity="right"
+            android:gravity="right" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/linearLayout"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:text="图片"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@android:color/holo_green_light" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:text="图片"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@android:color/holo_red_light" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:text="图片"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@android:color/holo_green_light" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:text="图片"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@android:color/holo_blue_light" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="图片"
+                android:background="@android:color/holo_green_dark" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:text="图片"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@android:color/holo_orange_light" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:text="图片"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@android:color/holo_green_light" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:text="图片"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@android:color/holo_red_light" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:text="图片"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@android:color/holo_green_light" />
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>

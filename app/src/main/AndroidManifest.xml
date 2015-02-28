@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.onefree.aiphone">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="14" />
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- WIFI权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 读取手机状态权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.camera.flash" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <android:uses-permission android:name="android.permission.READ_CALL_LOG" />
+
+    <application
+        android:name=".ui.activity.App"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppTheme">
+        <activity
+            android:name=".MainAcitivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.FlashActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.PhoneNumberMergeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.QrCodeCaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name=".ui.activity.QrCodeResultActivity"
+            android:screenOrientation="portrait"
+            android:uiOptions="splitActionBarWhenNarrow" />
+        <activity
+            android:name=".ui.activity.PhoneNumberWhereActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.FeedbackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.AboutApp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.PhoneInfoActivity"
+            android:label="@string/title_activity_phone_info" />
+        <activity
+            android:name=".ui.activity.RegisterActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_register"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="leancloud"
+            android:value="test" />
+
+        <activity
+            android:name=".ui.activity.AddShareActivity"
+            android:label="@string/title_activity_add_share"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateAlwaysVisible" />
+        <activity
+            android:name=".ui.activity.LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".ui.activity.UserCenter"
+            android:label="@string/title_activity_user_center" />
+        <activity
+            android:name=".ui.activity.SelectShareApp"
+            android:label="@string/title_activity_user_center" />
+        <activity
+            android:name=".ui.activity.ShareDetailActivity"
+            android:label="@string/title_activity_share_detail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"></activity>
+    </application>
+
+</manifest>

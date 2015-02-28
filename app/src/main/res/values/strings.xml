@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">搞机</string>
+    <string name="title_section1">手机</string>
+    <string name="title_section2">工具</string>
+    <string name="title_section3">搞机</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="circle_chart_default_used_rate">100</string>
+    <string name="title_activity_phone_info">手机信息</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_add_share">AddShareActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_user_center">UserCenter</string>
+    <string name="title_activity_share_detail">ShareDetailActivity</string>
+
+</resources>

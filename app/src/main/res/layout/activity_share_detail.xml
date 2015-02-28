@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detail_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="net.onefree.aiphone.ui.activity.ShareDetailActivity">
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/temp_comment_layout"
+        android:scrollbars="none" />
+
+    <RelativeLayout
+        android:id="@+id/temp_comment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/activity_bg_color_a">
+
+        <EditText
+            android:id="@+id/comment_content"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+
+            android:layout_toLeftOf="@+id/commit" />
+
+        <Button
+            android:id="@+id/commit"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="提交" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
