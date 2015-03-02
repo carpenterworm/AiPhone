@@ -80,35 +80,18 @@
         <activity
             android:name=".ui.activity.PhoneInfoActivity"
             android:label="@string/title_activity_phone_info" />
-        <activity
-            android:name=".ui.activity.RegisterActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/title_activity_register"
-            android:screenOrientation="portrait" />
 
         <meta-data
             android:name="leancloud"
             android:value="test" />
 
         <activity
-            android:name=".ui.activity.AddShareActivity"
-            android:label="@string/title_activity_add_share"
-            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
-            android:windowSoftInputMode="adjustResize|stateAlwaysVisible" />
-        <activity
-            android:name=".ui.activity.LoginActivity"
-            android:label="@string/title_activity_login" />
-        <activity
             android:name=".ui.activity.UserCenter"
             android:label="@string/title_activity_user_center" />
         <activity
             android:name=".ui.activity.SelectShareApp"
             android:label="@string/title_activity_user_center" />
-        <activity
-            android:name=".ui.activity.ShareDetailActivity"
-            android:label="@string/title_activity_share_detail"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustResize"></activity>
+
     </application>
 
 </manifest>
